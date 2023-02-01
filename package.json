@@ -10,12 +10,12 @@
   "author": "Ben Smithett <bensmithett@users.noreply.github.com>",
   "homepage": "https://github.com/bensmithett/tropical-utils",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "src"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "type": "module",
   "repository": {
