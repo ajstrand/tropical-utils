@@ -1,4 +1,7 @@
-import React from 'react'
+// import React from 'react'
+/** @jsx h */
+import { h } from 'preact';
+
 
 export function Island({
   children,

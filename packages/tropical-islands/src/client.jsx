@@ -1,5 +1,10 @@
-import React from 'react'
-import { hydrateRoot } from 'react-dom/client'
+// import React from 'react'
+// import { hydrateRoot } from 'react-dom/client'
+/** @jsx h */
+import { h } from 'preact';
+
+import { hydrate } from 'preact';
+
 
 export function hydrateIslands(islands, Providers = ({ children }) => children) {
   document.querySelectorAll('[data-tropical-hydration-component]').forEach((island) => {
@@ -13,7 +18,7 @@ export function hydrateIslands(islands, Providers = ({ children }) => children) 
     }
 
     const hydrationProps = JSON.parse(island.dataset.tropicalHydrationProps)
-    hydrateRoot(
+    hydrate(
       island,
       <Providers>
         <Component {...hydrationProps} />
